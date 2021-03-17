@@ -6,7 +6,7 @@ exports.createHero = function (req, res, next) {
         description: req.body.description
     };
 
-    Heros.create(hero, function(err, hero) {
+    Heros.create(hero, function(err, hero) {  // create hero api
         if(err) {
             res.json({
                 error : err
